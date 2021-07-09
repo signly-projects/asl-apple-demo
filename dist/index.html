@@ -19,21 +19,11 @@
     </li>
   </ul>
 
-  <h3>Turn Signly</h3>
-
-  <div class="form-check-radio">
-    <input id="signly--1" type="radio" value="yes" aria-describedby="signly--1_error" aria-valuenow="yes" scep-value="no">
-    <label class="form-check-label" for="signly--1" data-selector="signly--1-label" data-label="Yes">
-      On
-    </label>
-  </div>
-
-  <div class="form-check-radio">
-    <input id="signly--2" type="radio" value="no" aria-describedby="signly--2_error" aria-valuenow="no" scep-value="yes">
-    <label class="form-check-label" for="signly--2" data-selector="signly--2-label" data-label="Yes">
-      Off
-    </label>
-  </div>
+<script>
+  if (window.localStorage.getItem('showSignly') !== 'true') {
+    window.localStorage.setItem('showSignly', 'true')
+  }
+</script>
 
   <h3>Default message video clips</h3>
 
